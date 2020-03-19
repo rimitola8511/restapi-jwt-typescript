@@ -5,6 +5,7 @@ import config from './config/config'
 const dbOptions: ConnectionOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true
 }
 
 mongoose.connect(config.db.uri, dbOptions)
